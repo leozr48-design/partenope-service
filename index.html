@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partenope Service di Furiano Ciro - Pulizie & Giardinaggio</title>
+    <meta name="description" content="Partenope Service offre servizi professionali di pulizie e giardinaggio a Bolzano. Affidabilità e competenza al tuo servizio.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <img src="logo.png" alt="Partenope Service Logo" class="logo-img">
+            </div>
+            <nav class="nav">
+                <a href="#chi-siamo">Chi Siamo</a>
+                <a href="#servizi">Servizi</a>
+                <a href="#contatti-form" class="btn btn-outline">Preventivo</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-bg">
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+            </div>
+            <div class="container hero-content">
+                <h2 class="hero-title">Eccellenza nel <span>Pulito</span> e nel <span>Verde</span></h2>
+                <p class="hero-subtitle">Offriamo servizi professionali di pulizia e manutenzione del verde per privati e aziende a Bolzano e provincia.</p>
+                <div class="hero-actions">
+                    <a href="#servizi" class="btn btn-primary">Scopri i Servizi</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="chi-siamo" class="about">
+            <div class="container about-grid">
+                <div class="about-image">
+                    <!-- Placeholder image -->
+                    <div class="image-placeholder">
+                        <i class="fa-solid fa-people-carry-box"></i>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title left">Chi Siamo</h2>
+                    <p class="about-text">Partenope Service nasce dalla dedizione e dall'esperienza di <strong>Furiano Ciro</strong>. Offriamo soluzioni su misura per mantenere i tuoi spazi sempre in perfette condizioni, combinando efficienza e attenzione ai dettagli.</p>
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-circle-check"></i> <strong>Esperienza:</strong> Interventi rapidi e risolutivi.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> <strong>Professionalità:</strong> Prodotti e attrezzature di alta qualità.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> <strong>Affidabilità:</strong> Rispetto degli orari e degli accordi.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="servizi" class="services">
+            <div class="container">
+                <h2 class="section-title">I Nostri Servizi</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon blue">
+                            <i class="fa-solid fa-broom"></i>
+                        </div>
+                        <h3>Pulizie</h3>
+                        <p>Interventi di pulizia accurati per ambienti domestici, condomini, uffici e spazi commerciali. Utilizziamo prodotti di alta qualità per garantire un pulito impeccabile.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon green">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <h3>Giardinaggio</h3>
+                        <p>Manutenzione aree verdi, taglio erba, potatura siepi e alberi, progettazione giardini. Ci prendiamo cura del tuo spazio verde in ogni stagione.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contatti-form" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Richiedi un Preventivo</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Siamo a tua disposizione</h3>
+                        <p>Compila il modulo per richiedere un preventivo gratuito e senza impegno. Ti ricontatteremo il prima possibile per trovare la soluzione migliore per te.</p>
+                        <ul class="contact-list">
+                            <li>
+                                <div class="icon-wrap"><i class="fa-solid fa-phone"></i></div>
+                                <span>+39 000 000 0000</span>
+                            </li>
+                            <li>
+                                <div class="icon-wrap"><i class="fa-solid fa-envelope"></i></div>
+                                <span>info@partenopeservice.it</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Messaggio inviato (Placeholder)!');">
+                        <div class="form-group">
+                            <input type="text" placeholder="Il tuo Nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="La tua Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected>Seleziona un Servizio</option>
+                                <option value="pulizie">Pulizie</option>
+                                <option value="giardinaggio">Giardinaggio</option>
+                                <option value="entrambi">Pulizie & Giardinaggio</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="4" placeholder="Come possiamo aiutarti?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Invia Richiesta</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner">
+            <div class="container">
+                <h2>Hai bisogno di un intervento rapido e professionale?</h2>
+                <p>Siamo a tua disposizione per un preventivo gratuito e personalizzato.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contatti" class="footer">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <div class="logo footer-logo">
+                    <img src="logo.png" alt="Partenope Service Logo" class="logo-img">
+                </div>
+                <p class="footer-desc">Professionalità e dedizione per la cura dei tuoi spazi, indoor e outdoor.</p>
+            </div>
+            
+            <div class="footer-details">
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <strong>Sede</strong>
+                        <p>P.zza delle Erbe 75<br>39100 Bolzano</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fa-solid fa-file-invoice"></i>
+                    <div>
+                        <strong>Dati Fiscali</strong>
+                        <p>P.Iva: 02952680219<br>C.F.: FRNCRI68E03F111J</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; <span id="year"></span> Partenope Service di Furiano Ciro. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/390000000000" class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Contattaci su WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

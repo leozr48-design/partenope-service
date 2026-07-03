@@ -1,0 +1,20 @@
+{
+  "name": "partenope-service",
+  "version": "1.0.0",
+  "description": "Partenope Service - Professional cleaning and gardening services in Bolzano",
+  "private": true,
+  "scripts": {
+    "start": "npx http-server -p 8080"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^1.0.12"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "cleaning",
+    "gardening",
+    "bolzano"
+  ],
+  "author": "Furiano Ciro",
+  "license": "UNLICENSED"
+}

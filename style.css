@@ -120,6 +120,8 @@ h1, h2, h3 {
     outline: none !important;
     box-shadow: none !important;
     mix-blend-mode: multiply;
+    /* Ritaglia i bordi fisici interni dell'immagine */
+    clip-path: inset(3px);
 }
 
 .logo-img:hover {
@@ -625,6 +627,8 @@ h1, h2, h3 {
     outline: none !important;
     box-shadow: none !important;
     mix-blend-mode: multiply;
+    /* Ritaglia i bordi fisici interni dell'immagine */
+    clip-path: inset(3px);
 }
 
 .client-logo:hover {

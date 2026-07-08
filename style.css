@@ -155,7 +155,7 @@ h1, h2, h3 {
     overflow: hidden;
 }
 
-/* Global Animated Mesh Background */
+/* Global Artistic Image Background */
 .global-mesh-bg {
     position: fixed;
     top: 0;
@@ -163,24 +163,21 @@ h1, h2, h3 {
     width: 100vw;
     height: 100vh;
     z-index: -2;
-    background: linear-gradient(120deg, #e0f2fe 0%, #f0fdfa 50%, #e0f2fe 100%);
-    background-size: 200% 200%;
-    animation: meshFlow 15s ease infinite;
+    background: url('bg.png') center/cover no-repeat;
+    animation: slowZoom 30s ease-in-out infinite alternate;
 }
 
 .global-mesh-bg::after {
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: radial-gradient(circle at 15% 50%, rgba(2, 62, 138, 0.05), transparent 50%),
-                radial-gradient(circle at 85% 30%, rgba(42, 157, 143, 0.08), transparent 50%);
+    background: rgba(255, 255, 255, 0.3); /* Patina bianca per mantenere leggibilità elevata */
     z-index: -1;
 }
 
-@keyframes meshFlow {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+@keyframes slowZoom {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
 }
 
 .hero-content {

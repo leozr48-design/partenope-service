@@ -17,6 +17,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Handle Preventivo Form Submission
     const preventivoForm = document.getElementById('preventivo-form');
+
+    // Broom Animation for "Chi Siamo" link
+    const chiSiamoLink = document.querySelector('a[href="#chi-siamo"]');
+    const broomOverlay = document.getElementById('broom-overlay');
+    
+    if (chiSiamoLink && broomOverlay) {
+        chiSiamoLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            
+            if (broomOverlay.classList.contains('animating')) return;
+            
+            broomOverlay.classList.add('animating');
+            
+            // Scroll to the section smoothly while the broom sweeps
+            setTimeout(() => {
+                const target = document.getElementById('chi-siamo');
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 500); 
+            
+            // Remove the animation class once the CSS animation completes
+            setTimeout(() => {
+                broomOverlay.classList.remove('animating');
+            }, 1500); 
+        });
+    }
     if (preventivoForm) {
         preventivoForm.addEventListener('submit', (e) => {
             e.preventDefault();

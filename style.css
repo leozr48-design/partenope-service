@@ -659,11 +659,14 @@ h1, h2, h3 {
 }
 
 .broom-icon {
-    font-size: 150px;
-    color: var(--primary-blue);
+    height: 400px;
+    width: auto;
+    object-fit: contain;
     transform-origin: bottom center;
     animation: sweepSweep 0.3s infinite alternate ease-in-out;
-    filter: drop-shadow(0 10px 10px rgba(0,0,0,0.2));
+    mix-blend-mode: multiply;
+    filter: drop-shadow(0 20px 20px rgba(0,0,0,0.3));
+    clip-path: inset(2px);
 }
 
 @keyframes sweepAcross {
